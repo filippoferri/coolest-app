@@ -3,12 +3,9 @@ import { connect } from 'react-redux'
 import * as actions from '../actions'
 import Link from 'gatsby-link'
 
-import PaypalButton from '../components/PaypalButton'
+import { CLIENT } from "../config/paypalClient";
 
-const CLIENT = {
-  sandbox: 'AXVsYt9-AYuhWt1oxREggWVB4xWUPifFLnRbfmrGLbRminbE7TnJxaU9JBTH5xbra29ifPOkwTuZmkTG',
-  production: 'xxxXXX',
-}
+import PaypalButton from '../components/PaypalButton'
 
 const ENV = process.env.NODE_ENV === 'production'
   ? 'production'
