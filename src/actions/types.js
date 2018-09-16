@@ -1,0 +1,1 @@
+export const FETCH_BIDDERS = "FETCH_BIDDERS";
